@@ -1,14 +1,21 @@
 <resources>
     <style name="CalcButton">
         <item name="android:textSize">24sp</item>
-        <item name="android:textColor">@color/my_green</item>
+        <item name="android:textColor">@color/purple</item>
     </style>
 
 
 <style name="orangeText">
     <item name="android:textColor">@color/orange</item>
     <item name="colorPrimary">@color/orange</item>
-    <item name="buttonTint">@color/orange</item>
-    <item name="backgroundTint">@color/orange</item>
+    <item name="buttonTint">@color/purple</item>
+    <item name="backgroundTint">@color/purple</item>
 </style>
+
+    <style name="PurpleText">
+        <item name="android:textColor">@color/purple</item>
+        <item name="colorPrimary">@color/purple</item>
+        <item name="buttonTint">@color/orange</item>
+        <item name="backgroundTint">@color/orange</item>
+    </style>
 </resources>

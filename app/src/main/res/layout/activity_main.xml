@@ -18,14 +18,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/number_of_people"
-        android:textSize="@dimen/label_text_size"
+        android:textSize="32sp"
         android:labelFor="@id/num_attend_edit_text"
         app:layout_constraintBottom_toTopOf="@id/num_attend_edit_text"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="90dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        style = "@style/orangeText" />
+        style = "@style/PurpleText" />
 
     <EditText
         android:id="@+id/num_attend_edit_text"
@@ -35,9 +35,9 @@
         android:inputType="number"
         android:ems="5"
         android:importantForAutofill="no"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/how_many"
-        style = "@style/orangeText"/>
+        app:layout_constraintLeft_toRightOf="@id/how_many"
+        app:layout_constraintTop_toTopOf="@id/how_many"
+        style = "@style/PurpleText"/>
 
     <TextView
         android:id="@+id/how_hungry"
@@ -47,14 +47,15 @@
         android:textSize="24sp"
         android:labelFor="@id/hungry_radio_group"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/num_attend_edit_text" />
+        app:layout_constraintTop_toBottomOf="@id/num_attend_edit_text"
+        style = "@style/PurpleText"/>
 
     <RadioGroup
         android:id="@+id/hungry_radio_group"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/how_hungry"
         app:layout_constraintTop_toBottomOf="@id/how_hungry">
         <RadioButton
             android:id="@+id/light_radio_button"
@@ -91,7 +92,8 @@
         android:layout_marginTop="20dp"
         android:textSize="36sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/hungry_radio_group"/>
+        app:layout_constraintTop_toBottomOf="@id/hungry_radio_group"
+        style="@style/orangeText"/>
 
     <Button
         android:id="@+id/calc_button"
