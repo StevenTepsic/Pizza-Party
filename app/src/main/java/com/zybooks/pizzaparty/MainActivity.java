@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         mNumAttendEditText = findViewById(R.id.num_attend_edit_text);
         mNumPizzasTextView = findViewById(R.id.num_pizzas_text_view);
         mHowHungryRadioGroup = findViewById(R.id.hungry_radio_group);
+
     }
 
     public void calculateClick(View view) {
