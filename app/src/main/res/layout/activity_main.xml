@@ -35,6 +35,7 @@
         android:inputType="number"
         android:ems="5"
         android:importantForAutofill="no"
+        android:freezesText="true"
         app:layout_constraintLeft_toRightOf="@id/how_many"
         app:layout_constraintTop_toTopOf="@id/how_many"
         style = "@style/PurpleText"/>
